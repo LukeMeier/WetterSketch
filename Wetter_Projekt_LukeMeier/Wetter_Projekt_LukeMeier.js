@@ -3,6 +3,9 @@ let count = 0;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(0,180,255);
+  fill(255,255,0);
+  stroke(255,255,0);
+  ellipse(200, 200, 150);
 }
 
 
@@ -37,6 +40,9 @@ function mouseClicked(){
 if(count >= 5){
      clear();
      background(0,188,255);
+     fill(255,255,0);
+  stroke(255,255,0);
+  ellipse(200, 200, 150);
      count= 0;
    }
 }
