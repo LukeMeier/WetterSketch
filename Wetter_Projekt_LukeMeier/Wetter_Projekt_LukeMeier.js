@@ -6,7 +6,7 @@ function setup() {
 
 
 function draw() {
-  cloud();
+ 
 }
 
 function cloud(x, y){
@@ -17,4 +17,19 @@ function cloud(x, y){
   ellipse(x+30, y+2, 65);
   ellipse(x+50, y+10, 50);
   
+}
+
+function mouseClicked(){
+   cloud(mouseX, mouseY);
+   for (let i = 0; i < 50; i++) {
+  rain(mouseX, mouseY);
+  console.log(i);
+}
+   
+}
+
+function rain(x, y){
+fill(0,0,255);
+  stroke(0,0,255);
+  ellipse(random(x-60,x+70),random(y+40, y+200),10,10);
 }
